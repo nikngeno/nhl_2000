@@ -1,0 +1,11 @@
+Team
+"Stores information about each NHL team."
+TeamID (Primary Key)
+TeamName
+Abbreviation
+City
+StateOrProvince
+Country
+FoundedYear
+HomeArena
+Conference (e.g., Eastern, Western)
