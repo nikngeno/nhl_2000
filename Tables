@@ -1,11 +1,24 @@
 Team
 "Stores information about each NHL team."
-TeamID (Primary Key)
-TeamName
-Abbreviation
-City
-StateOrProvince
-Country
-FoundedYear
-HomeArena
-Conference (e.g., Eastern, Western)
+    TeamID (Primary Key)
+    TeamName
+    Abbreviation
+    City
+    StateOrProvince
+    Country
+    FoundedYear
+    HomeArena
+    Conference (e.g., Eastern, Western)
+
+Player
+"Contains personal and career information about players."
+    PlayerID (Primary Key)
+    FirstName
+    LastName
+    DateOfBirth
+    Nationality
+    Height (in cm or inches)
+    Weight (in kg or pounds)
+    Shoots (Left or Right)
+    PositionID (Foreign Key to Positions table)
+    DraftYear
