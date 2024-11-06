@@ -1,1 +1,12 @@
-
+create table TeamCoaches
+(
+	TeamCoachID int primary key,
+	TeamID int,
+	CoachID int,
+	SeasonID int,
+	StartDate date,
+	EndDate date,
+	constraint FK_TeamID foreign key (TeamID) references Team(TeamID),
+	constraint FK_CoachID foreign key (CoachId) references Coaches(CoachID),
+	constraint FK_SeasonID foreign key (SeasonID) references Seasons(SeasonID)
+)
