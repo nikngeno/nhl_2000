@@ -10,3 +10,4 @@ create table TeamCoaches
 	constraint FK_CoachID foreign key (CoachId) references Coaches(CoachID),
 	constraint FK_SeasonID foreign key (SeasonID) references Seasons(SeasonID)
 )
+
