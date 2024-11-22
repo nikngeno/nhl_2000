@@ -27,3 +27,17 @@ create table Events
 	constraint FK_TeamID foreign key (TeamID) references Team(TeamID),
 	constraint FK_AssistPlayerID foreign key (AssistPlayerID) references Player(PLayerID)
 )
+create table Standings
+(
+	StandingID int primary key,
+	SeasonID int,
+	TeamID int,
+	Wins int,
+	Losses int,
+	OvertimeLosses int,
+	Points int,
+	GoalsFor int,
+	GoalsAgainst int,
+	constraint FK_TeamID foreign key (TeamID) references Team(TeamID),
+	constraint FK_SeasonID foreign key (SeasonID) references Seasons(SeasonID)
+)
