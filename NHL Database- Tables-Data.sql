@@ -1,5 +1,5 @@
 --create main Database to hold Data on NHL teams
-create database NHLDB
+create database NHLMainDB
 -- the Dtabase will have 9 main tables that hold data for the past 20 seasons
 
 create table Games(
